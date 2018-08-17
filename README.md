@@ -3,6 +3,7 @@
 <p>LOGIN AND SIGNUP</p>
 <br>
 <img src="LOGIN.gif">
+<<<<<<< HEAD
 <br>
 <p>FIX YOUR APPOINTMENT"</p>
 <br>
