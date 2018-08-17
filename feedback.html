@@ -1,0 +1,131 @@
+﻿<link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Permanent+Marker|Playfair+Display+SC|Merriweather" rel="stylesheet">
+<html>
+<head>
+
+<script>
+function validateForm() 
+{
+	comment();
+	answer();
+    
+}
+
+function comment() 
+{
+	var x = document.forms["myForm"]["comments"].value;
+    if (x == "") 
+    {
+        alert(" must be filled out");
+        return false;
+    }
+   
+   
+    
+}
+function answer() 
+{
+ var y = document.forms["myForm"]["answer"].value;
+    if (y == "") 
+    {
+        alert(" must be filled out");
+        return false;
+    }
+}
+
+</script>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {														
+    background-image: url("sal.jpg");
+background-size:cover;
+}
+.serial{													<!-- serial numbers -->
+	color: black;
+	font-family:oblique;
+	font-size:70px;
+font-weight:bold;
+}
+
+.text{
+	font-family:lobste;
+	text-align:center;
+	color:black;
+        font-size:70px;
+		  }
+.text2{
+	font-family:lobste;
+	color:black;
+font-size:30px;
+font-weight:bold;
+	}
+.marquee{
+	color:#F8177D;
+	font-size:20px;
+        color:black
+}
+.p{
+	text-align:right;
+	color:white;
+}
+.input{
+	width=100%;
+	height:50%;
+}
+</style>
+</head>
+<body class="bg">
+
+
+<h1 class="text"><u>FEEDBACK FORM</u></h1>
+
+<marquee class="marquee">Click and Drag the slider in the required direction to enter your FeedBack!!!</marquee>
+
+<hr>
+
+
+<form name="myForm" action="feedbackp.php"  
+onsubmit="return validateForm()" method="post">
+
+<table style="width:100%">									<!-- table of contents -->
+  <tr>
+    <th class="serial">RATE US</th>
+    
+ 	
+    <th>      </th>
+  </tr>
+  <tr class="text2">
+    
+    <td>SALON AMBIENCE</td>
+    <td><input type="range" name="a1" min="0" max="5"></td>	 
+</tr>
+  <tr class="text2">
+    
+    <td>QUALITY OF SERVICE</td>
+    <td><input type="range" name="a2" min="0" max="5"></td>
+  </tr>
+  <tr class="text2">
+    
+    <td>PERSONAL SATISFACTION</td>
+    <td><input type="range" name="a3" min="0" max="5"></td>
+  </tr>
+  <tr class="text2">
+    
+    <td>WAS BOOKING YOUR APPOINTMENT EASY?</td>
+    <td><input type="range" name="a4" min="0" max="5"></td>
+  </tr>
+  <tr class="text2">
+    
+    <td>WORTH YOUR MONEY?</td>
+    <td><input type="range" name="a5" min="0" max="5"></td>
+  </tr>
+	
+ 
+</table>
+<br>
+<center><button type="submit">Submit</button></center> 
+</form>
+</body>
+</html>

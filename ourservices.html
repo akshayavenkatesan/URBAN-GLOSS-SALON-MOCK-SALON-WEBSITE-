@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+<title>Our Services</title>
+
+</head>
+<style>
+body
+{
+background-image:url("bg.jpg");
+background-size:cover;
+}
+button
+{
+background-color:#f5deb3;
+border:none;
+color:#52361b;
+padding:1% 1%;
+font-size:250%;
+margin-top:40%;
+margin-left:5%;
+cursor:pointer;
+border-radius:30%;
+font-family:italics;
+}
+
+
+h1
+{
+color:#52361b;
+font-size:670%;
+position:fixed;
+bottom:50%;
+right:60%;
+
+}
+h2
+{
+color:#52361b;
+font-size:200%;
+position:fixed;
+bottom:25%;
+right:50%;
+left:3%;
+}
+.mySlides {display:none;}
+div.position
+{
+position:fixed;
+right:3%;
+top:20%;
+
+}
+</style>
+
+<body>
+
+<h1><i>Our Services</h1>
+<h2><i>Walk into an Urban Gloss salon and treat your hair, skin and body to a day of detoxification and relaxation! Our beauty experts are armed with ultramodern equipment, world class products and unmatched skill, setting our beauty services apart from the rest.</h2>
+<h3><button onclick="window.location.href='explore.html'"><b><i>Click Here To Explore!</botton></h3>
+<div class="position">
+  <img class="mySlides" src="u.jpg" >
+  
+  <img class="mySlides" src="s2.jpg" >
+  <img class="mySlides" src="s3.jpg" >
+  <img class="mySlides" src="s4.jpg" >
+  <img class="mySlides" src="s5.jpg" >
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+<style>
+.mySlides {display:none; 
+  margin: 0px auto; // center
+  width:1100px; 
+  height:720px; 
+   
+} 
+
+
+body
+{
+background-image:url("bg.jpg");
+background-size:cover;
+}
+h2
+{
+color:black;
+font-size:90px;
+font-family:papyrus;
+text-align:center;
+font-weight: bold;
+}
+h3
+{
+color:black;
+font-size:40px;
+font-family:papyrus;
+font-weight: bold;
+}
+p
+{color:black;
+font-size:40px;
+font-family:papyrus;
+font-weight: bold;
+padding-left: 100px;
+padding-right:100px;
+}
+
+
+</style>
+</head>
+<body>
+<h2>India's No.1 hair & beauty salon</h2>
+<h2>Urban Gloss</h2>
+<div>
+  <img class="mySlides" src="slide.jpg" >
+  <img class="mySlides" src="slide4.jpg" >
+  <img class="mySlides" src="slide2.jpg">
+<img class="mySlides" src="slide3.jpg" >
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); 
+}
+</script>
+
+<p>"An ally to the classic Indian tradition,
+ URBAN GLOSS inspires one to express the unique beauty and sensuality within… 
+enabling one to realize the potency of beauty."
+The contemporary Indian beauty expert - URBAN GLOSS continuously innovates to offer
+ a wide range of high performance and world class beauty salons.
+ Combining international cosmetic technology with an in-depth understanding of the Indian people's needs,
+ URBAN GLOSS also offers its consumers a comprehensive beauty experience through its products that are ideal for a variety of Indian skin tones.<p>
+
+</body>
+</html>

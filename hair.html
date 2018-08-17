@@ -1,0 +1,394 @@
+﻿<html>
+<head>
+<title>hair</title>
+</head>
+<style>
+body
+{
+background-image:url("bg.jpg");
+background-size:cover;
+}
+h1
+{
+margin-top:2%;
+font-size:300%;
+}
+.cont
+{
+overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
+
+
+img
+{
+margin-top:6%;
+}
+.container {
+    position: relative;
+    font-size:250%;
+}
+
+.text-block {
+    position:absolute;
+    bottom: 1%;
+    left:16%;
+    
+    color:black;
+    
+    
+}
+.text-block1 {
+    position:absolute;
+    bottom: 1%;
+    left:48%;
+    
+    color:black;
+    
+    
+}
+.text-block2 {
+    position:absolute;
+    bottom: 1%;
+    left:80%;
+    
+    color:black;
+    
+    
+}
+.text-block3 {
+    position:absolute;
+    bottom: 1%;
+    left:105%;
+    
+    color:black;
+    
+    
+}
+.text-block4 {
+    position:absolute;
+    bottom: 1%;
+    left:138%;
+    
+    color:white;
+    
+    
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup3 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup4 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup .popuptext {
+    visibility: hidden;
+    width: 550%;
+    background-color:#f7e0c0;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+}
+.popup1 .popuptext1 {
+    visibility: hidden;
+    width: 500%;
+    background-color:#f7e0c0;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+}
+.popup2 .popuptext2 {
+    visibility: hidden;
+    width: 670%;
+    background-color:#f7e0c0;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+}
+.popup3 .popuptext3 {
+    visibility: hidden;
+    width: 350%;
+    background-color:#f7e0c0;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+}
+.popup4 .popuptext4 {
+    visibility: hidden;
+    width: 380%;
+    background-color:#f7e0c0;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+}
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.popup1 .popuptext1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.popup2 .popuptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.popup3 .popuptext3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.popup4 .popuptext4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popup1 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popup2 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popup3 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popup4 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+</style>
+
+<body>
+<script>
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+function myFunction1() {
+    var popup = document.getElementById("myPopup1");
+    popup.classList.toggle("show");
+}
+function myFunction2() {
+    var popup = document.getElementById("myPopup2");
+    popup.classList.toggle("show");
+}
+function myFunction3() {
+    var popup = document.getElementById("myPopup3");
+    popup.classList.toggle("show");
+}
+function myFunction4() {
+    var popup = document.getElementById("myPopup4");
+    popup.classList.toggle("show");
+}
+</script>
+
+<h1><i>Click on your choice to know more!</h1>
+<div class="cont">
+
+<div class="container">
+  <img src="haircolor.jpg" alt="haircolor">
+  <div class="text-block">
+ <div class="popup" onclick="myFunction()"><h4><i>Hair Colour</h4>
+  <span class="popuptext" id="myPopup">Hair Colouring:<br/>
+At Urban Gloss, we only use high-end,<br/>
+ ammonia free hair color for all our hair coloring services,<br/>
+ which include root touch up, global colouring, streaking,<br/>
+ block colouring and creative colouring. Our hair experts<br/>
+ can transform you from Plain Jane to Hot Suzy with just<br/>
+ a few streaks of our ammonia free hair color.<br/>
+Reinvent yourself by experimenting with colours at Urban Gloss.
+</span>
+</div>  
+  </div>
+
+
+  <img src="hairstyle.jpg" alt="hairstyle">
+  <div class="text-block1">
+ <div class="popup1" onclick="myFunction1()"><h4><i>Hair Styles</h4>
+  <span class="popuptext1" id="myPopup1">Hair Styles:<br/>
+Hairdressers are skilled at sculpting a look that not<br/>
+only defines your face, but also adds movement and<br/>
+ volume. At Urban Gloss you can trust our hairstylists<br/>
+to give you the latest hairstyle, while keeping in mind<br/>
+your preferences. New hair styles also come with a<br/>
+ relaxing hair wash and conditioning, giving your<br/>
+ hair a natural shine.Hair cuts are not merely<br/>
+ new hair styles, but a new you!<br/>
+</span>
+</div>  
+  </div>
+
+<img src="hairspa.jpg" alt="hairspa">
+<div class="text-block2">
+ <div class="popup2" onclick="myFunction2()"><h4><i>Hair Spa</h4>
+  <span class="popuptext2" id="myPopup2">Hair Spa:<br/>
+ Hair spa is a healthy indulgence that exfoliates<br/>
+your hair, stimulates your scalp and promotes hair growth.<br/>
+A hair spa treatment is the best solution for dry,<br/>
+frizzy hair. It also relaxes your body and<br/>
+relieves stress. That’s the best part about hair spa!<br/>
+</span>
+</div>  
+  </div>
+  
+
+<img src="hairstraightening.jpg" alt="hairstraightening">
+<div class="text-block3">
+ <div class="popup3" onclick="myFunction3()"><h4><i>Hair Straightening</h4>
+  <span class="popuptext3" id="myPopup3">Hair Straightening:<br/>
+Our hairstylists can transform even the tightest curls<br/>
+ into silky straight hair with our hair smoothening treatment.<br/>
+Our hairstylists will ensure you get a damage-free hair<br/>
+ straightening treatment because at Naturals we only use<br/>
+ safe and internationally tested brands such as Wella,<br/>
+ Schwarzkopf and L’Oreal. So opt for our hair smoothening<br/>
+ service and keep your hair and yourself worry-free.<br/>
+</span>
+</div>  
+  </div>
+
+
+
+<img src="hairtreatment.jpg" alt="hairtreatment">
+<div class="text-block4">
+ <div class="popup4" onclick="myFunction4()"><h4><i>Hair Treatment</h4>
+  <span class="popuptext4" id="myPopup4">Hair Treatment:<br/>
+Our special hair treatments will leave your hair healthy<br/>
+and glowing. Urban Gloss also offers the best hair<br/>
+treatment that fights hair fall and dandruff by<br/>
+nurturing it with vital minerals and nutrients.<br/>
+The result? Strong,healthy hair with a natural shine!<br/>
+</span>
+</div>  
+  </div>
+</div>
+
+
+</body>
+</html>

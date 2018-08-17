@@ -1,0 +1,176 @@
+﻿<html>
+<head>
+<style>
+body {font-family: papyrus, Helvetica, sans-serif;}
+body{background-image:url("bg.jpg");
+background-repeat: no-repeat;
+    background-size: auto;}
+
+input[type=text], select,textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family:papyrus
+}
+
+input[type=submit] {
+    background-color: #f5deb3;
+    color: brown;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.button {
+    background-color: #C0C0C0; /* Green */
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3 {padding: 32px 16px;}
+
+</style>
+
+<script type="text/javascript">
+    function validateForm() {
+
+
+
+	ValidateFirstname();
+	ValidateLastname();
+	checkPhone();
+	ValidateEmail();
+
+
+
+    }
+
+
+function checkPhone() {
+        var phone = document.forms["myForm"]["phonenum"].value;
+            if(phone.length == 10) {  return true;  }
+            else {
+                alert('Enter valid phone number');
+                return false;
+            }
+        }
+function ValidateEmail()   
+{  
+var mail = document.forms["myForm"]["email"].value;
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))  
+  {  
+    return true  ;
+  }  else {
+    alert("You have entered an invalid email address!")  ;
+    return false ;
+}          
+
+    }
+
+function ValidateFirstname()
+{
+var fname=document.forms["myForm"]["fname"].value;
+if(/^[A-Za-z\s]+$/.test(fname))
+{  
+    return true  ;
+  }  else {
+    alert("You have entered an invalid firstname!")  ;
+    return false ;
+}          
+    }
+
+function ValidateLastname()
+{
+var lname=document.forms["myForm"]["lname"].value;
+if(/^[A-Za-z\s]+$/.test(lname))
+{  
+    return true  ;
+  }  else {
+    alert("You have entered an invalid lastname!")  ;
+    return false ;
+}          
+    }
+
+    
+</script>
+
+</head>
+<body>
+
+<h1>FIX YOUR APPOINTMENT NOW!!</h1>
+
+
+<div class="container">
+  
+<form action="login.php" method="post"  name="myForm" onsubmit="validateForm()">
+
+    <label for="fname">FIRST NAME</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">LAST NAME</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+     
+    <label for="phonenum">PHONE NUMBER</label>
+	<input type="text" id="phonenum" name="phonenumber" placeholder="enter a valid phone number.." required>    
+
+	<label for="email">E mail</label>
+    <input type="text" id="email" name="email" placeholder="enter your email.." required>
+   
+ <label for="branch">BRANCH</label>
+    <select id="branch" name="BRANCH" required>
+<option value="" disabled selected>CHOOSE THE BRANCH!!..</option>
+      <option value="adayar">ADAYAR</option>
+      <option value="kknagar">KKNAGAR</option>
+      <option value="mylapore">MYLAPORE</option>
+    </select>
+
+    <label for="question" >HAVE YOU VISITED OUR SALON BEFORE?</label><br>
+	
+      <input type="radio" name="question" value="yes">YEAH :)<br>
+      <input type="radio" name="question" value="no">NAHH :(<br>
+	
+<label for="question">APPOINTMENT DATE:</label>
+  <input type="date" name="bday" required>
+<select id="form_dob_month" name="dob_month" required>
+ <option value="" disabled selected>SELECT THE SESSION..</option>
+	<option value="forenoon">forenoon</option>
+	<option value="afternoon">afternoon</option>	
+
+
+</select>
+<label for="service">CHOOSE YOUR SERVICE!!</label>
+    <select id="service" name="service" required>
+<option value="" disabled selected>CHOOSE YOUR SERVICE!!..</option>
+      <option value="hair">hair</option>
+      <option value="body">body</option>
+      <option value="skin">skin</option>
+    </select>	
+ 
+ <input type="submit" value="Submit"/>
+   
+
+</form>
+</div>
+
+</body>
+</html>
