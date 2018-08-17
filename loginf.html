@@ -1,0 +1,90 @@
+﻿<html>
+<head>
+<style>
+body {
+    background-image:url("log.jpg");
+    background-size:cover;
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+input[type=submit] {
+    background-color: #f5deb3;
+    color: brown;
+    padding: 5% 5%;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+margin-left:27%;
+margin-top:8%;
+font-size:100%;
+}
+button{
+background-color: #f5deb3;
+    color: brown;
+    padding: 5% 5%;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+margin-left:25%;
+margin-top:10%;
+font-size:100%;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 2%;
+    border: 1% solid #ccc;
+    border-radius: 3%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left:
+    resize: vertical;
+    font-family:ariel;
+}
+form { 
+margin: 0 auto; 
+width:250px;
+color:#f5deb3;
+}
+
+h1
+{
+color:#f5deb3;
+font-size:300%;
+
+}
+label{
+font-size:250%;
+}
+</style>
+</head>
+<body>
+
+
+<h1><i>login</h1>
+<form action="loginform(j).php" method="post"  name="loginform">
+
+    <label for="username"><i><b>Username:</label>
+    <input type="text" id="username" name="username" required>  
+
+	
+   
+<label for="password"><i><b>password:</label>
+<input type="password" id="password" name="password" required>
+
+
+ 
+ <input type="submit" value="Login">
+<button onclick="window.location.href='signup.html'">Sign Up</button>
+
+
+</body>
+</html>
